@@ -1,0 +1,1 @@
+du -ach -d 1  | sort -nr

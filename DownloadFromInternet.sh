@@ -1,0 +1,16 @@
+curl 'https://hiteducn0-my.sharepoint.com/personal/lx_hu_hit_edu_cn/_layouts/15/download.aspx?UniqueId=7a519710%2Dcacd%2D48df%2D9beb%2D2efc19e5a66c' \
+  -H 'authority: hiteducn0-my.sharepoint.com' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  -H 'accept-language: zh-CN,zh;q=0.9' \
+  -H 'cookie: FedAuth=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjEzLDBoLmZ8bWVtYmVyc2hpcHx1cm4lM2FzcG8lM2Fhbm9uIzcwZjA2MDFmNzU4OGJjNzViMzRkNWEyYmEzNjI1NGUwZWY5ZTVkZjc3N2RjY2VjYjYzYWVmMWVmOGI4NGFiODQsMCMuZnxtZW1iZXJzaGlwfHVybiUzYXNwbyUzYWFub24jNzBmMDYwMWY3NTg4YmM3NWIzNGQ1YTJiYTM2MjU0ZTBlZjllNWRmNzc3ZGNjZWNiNjNhZWYxZWY4Yjg0YWI4NCwxMzM4ODQ0MTUzOTAwMDAwMDAsMCwxMzM4ODUyNzY0MDA2NTg5NDcsMC4wLjAuMCwyNTgsYjRmODI4ZDctODZlYS00OTE3LTg0OTctYzZlOTdiMzA4OWQzLCwsYTRjZTM5ZjgtY2RmYy00MzcyLWE0ZmItMDUwOWE2MDExNTRhLGE0Y2UzOWY4LWNkZmMtNDM3Mi1hNGZiLTA1MDlhNjAxMTU0YSxBUEl5TUFJcG1rT0VOQjVHcy9ZZk1nLDAsMCwwLCwsLDI2NTA0Njc3NDM5OTk5OTk5OTksMCwsLCwsLCwwLCwxOTYwMTAsTkxITm9QekJlYzNqTGxRc1NZb0w1UTFFZ2ZFLHdSWFRMcTkyMGoxQ1dtNWRkUDNTTEhIcnBZQkZESTRFSVdqWjhyKzI5NnRlajB2TktQYllHdTB4KzZLZFlZeGkrMGx5U0dvdURVdkh2WVI1citaTVNHVWVXWThpWjRrcWNnd0tIWUFtK2tEMUQ2WkpDMjF4Y1poSlVqT09VbFBxS1NScXQ4akxYeVgyN3lML2hNakt6MUh0STN3d0pkWG9aU2QvcnVwTitPT0NWaGs3NGRJcHMvMXpic0lkZ2F3NGl6V1NyNjNOUSttU3A4Nmk5eGlkRzg5bTlZdEpnTHZWU29PVHd0Y2h4Q3VhUXhJa0JOaWU2SUVFWitLTlJyb01jcnlyNjlUWENHaVVXcTYwVGhwVGVEMUgrMXp6SXpLSERuQlVIVlJrRmlteS9iWXA0Vm42dEg0NmduVllxY0xZWmgycXpON1hsbCtuVmI0ZmNZbXUyZz09PC9TUD4=; FeatureOverrides_experiments=[]' \
+  -H 'referer: https://hiteducn0-my.sharepoint.com/personal/lx_hu_hit_edu_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Flx%5Fhu%5Fhit%5Fedu%5Fcn%2FDocuments%2FGaussianAvatar&ga=1' \
+  -H 'sec-ch-ua: "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: iframe' \
+  -H 'sec-fetch-mode: navigate' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'service-worker-navigation-preload: {"supportsFeatures":[1855,61313]}' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \
+ --compressed    --output '/nvme0/public_data/Occupancy/proj/cache/gsav/pretrained_models.zip'
