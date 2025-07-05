@@ -13,10 +13,15 @@ for m in os.listdir(mask_dir):
     image = cv2.imread(os.path.join(image_dir, m.replace("png", "jpg")))
     contours, _ =cv2.findContours( mask.astype(np.uint8),mode=cv2.RETR_EXTERNAL,method=cv2.CHAIN_APPROX_NONE)
     for i, contour in enumerate(contours):
+        b = 20
         x, y, w, h = cv2.boundingRect(contour)
+        x = max(0, x - b)
+        y = max(0, y - b)
+        w = min(image.shape[1] - x, w + 2 * b)
+        h = min(image.shape[0] - y, h + 2 * b)
         cut_image = image[y:y+h, x:x+w]
         cut_sem = mask[y:y+h, x:x+w]
-        cut_image[cut_sem == 0] = 255
+        # cut_image[cut_sem == 0] = 255
         os.makedirs(output_dir, exist_ok=True)
         # cut_image  =cv2.resize(cut_image, (256, 256), interpolation=cv2.INTER_LINEAR)
         cv2.imwrite(os.path.join(output_dir,m),cut_image)
