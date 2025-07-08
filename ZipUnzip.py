@@ -45,13 +45,13 @@ def zipDir(dirpath, outFullName):
  
 
 if __name__ == "__main__":
-    input_path = "/nvme0/public_data/Occupancy/proj/cache/a2d2/camera_lidar/20180810_150607/clip"
-    output_path = "/nvme0/public_data/Occupancy/proj/cache/a2d2/camera_lidar/20180810_150607/clip.zip"
+    input_path = "/home/tangyuan/project/Grounded-SAM-2"
+    output_path = "/home/tangyuan/project/Grounded-SAM-2.zip"
     zipDir(input_path, output_path)
-    path = '/nvme0/public_data/Occupancy/proj/cache/a2d2/camera-rearcenter-gaimersheim-a2d2.zip'
-    # for f in os.listdir('/nvme0/public_data/Occupancy/proj/img2img-turbo/inputs/vehicle_view.zip'):
-    #     path = os.path.join('/nvme0/public_data/Occupancy/proj/img2img-turbo/inputs/OpenDataLab___A2D2/raw/A2D2',f)
-    #     download_extract(path)
-    #     os.remove(path)
-    download_extract(path)
-    os.remove(path)
+    # path = '/nvme0/public_data/Occupancy/proj/cache/a2d2/camera-rearcenter-gaimersheim-a2d2.zip'
+    # # for f in os.listdir('/nvme0/public_data/Occupancy/proj/img2img-turbo/inputs/vehicle_view.zip'):
+    # #     path = os.path.join('/nvme0/public_data/Occupancy/proj/img2img-turbo/inputs/OpenDataLab___A2D2/raw/A2D2',f)
+    # #     download_extract(path)
+    # #     os.remove(path)
+    # download_extract(path)
+    # os.remove(path)
