@@ -20,7 +20,7 @@ def video2imgs(videoPath, imgPath):
             print("Process finished!")
             break
         else:
-            if frames % 1 == 0:        
+            if frames % 10 == 0:        
                 imgname =  str(count).rjust(3,'0') + ".jpg"
                 newPath = os.path.join(imgPath , imgname)
                 print(imgname)
@@ -31,4 +31,4 @@ def video2imgs(videoPath, imgPath):
         frames += 1
     cap.release()
     print("共有 %d 张图片"%(count-1))
-video2imgs('/nvme0/public_data/Occupancy/proj/Generation/cosmos-predict1/outputs/0.mp4','/nvme0/public_data/Occupancy/proj/vggt/examples/drive/images')  # 视频路径，图片保存路径
+video2imgs('/home/tangyuan/project/youtube.mp4','/home/tangyuan/project/Large_Scene_Rec/data/youtube/images')  # 视频路径，图片保存路径
