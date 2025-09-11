@@ -18,7 +18,7 @@ import shutil
 parser = ArgumentParser("Colmap converter")
 parser.add_argument("--no_gpu", action='store_true')
 parser.add_argument("--skip_matching", action='store_true')
-parser.add_argument("--source_path", "-s", default="", type=str)
+parser.add_argument("--source_path", "-s", default="/home/tangyuan/project/Large_Scene_Rec/data/youtube", type=str)
 parser.add_argument("--camera", default="OPENCV", type=str)
 parser.add_argument("--colmap_executable", default="", type=str)
 parser.add_argument("--resize", action="store_true")
@@ -34,7 +34,7 @@ if not args.skip_matching:
         feat_extracton_cmd = colmap_command + " feature_extractor "\
         "--database_path " + args.source_path + "/distorted/database.db \
         --image_path " + args.source_path + "/input \
-        --ImageReader.mask_path " + args.source_path + "/colmap_mask \
+        # --ImageReader.mask_path " + args.source_path + "/colmap_mask \
         --ImageReader.single_camera 1 \
         --ImageReader.camera_model " + args.camera + " \
         --SiftExtraction.use_gpu " + str(use_gpu)
