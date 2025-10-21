@@ -34,3 +34,5 @@
 
     ]
 }
+
+// PYTHONPATH=/root/code/ python -m debugpy --listen 4567 --wait-for-client .py
