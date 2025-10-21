@@ -1,0 +1,36 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python 调试程序: 当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+             "cwd": "${fileDirname}",
+            //  "args": ["evaluate","--conf_files", "/nvme0/public_data/Occupancy/OpenSeeD/configs/openseed/openseed_swint_lang.yaml","--overrides","WEIGHT","/nvme0/public_data/Occupancy/OpenSeeD/model_state_dict_swint_51.2ap.pt"]
+            
+        },
+        {
+            "name": "Python: 远程附加",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 4567
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${fileDirname}",
+                    "remoteRoot": "."
+                }
+            ],
+            "justMyCode": false
+        }
+
+    ]
+}
