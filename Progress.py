@@ -47,7 +47,7 @@ class StaticProgress:
         now = time.time()
         elapsed = now - self.start_time
         rate = self.counter / elapsed if elapsed > 0 else 0
-        remaining = (self.total - self.counter) / rate if rate > 0 else math.inf
+        remaining = (self.total - self.counter) / rate /60 if rate > 0 else math.inf
 
         # 构建日志字符串
         pct = self.counter / self.total * 100
@@ -56,7 +56,7 @@ class StaticProgress:
         log = (f"[{self.desc}] {pct:5.1f}% | "
                f"{self.counter:>6}/{self.total:<6} | "
                f"{rate:7.2f} {self.unit}/s | "
-               f"ETA {remaining:6.1f}s"
+               f"ETA {remaining:6.1f} min"
                + (f" | {metric_str}" if metric_str else ""))
         print(log, flush=True)
 
@@ -66,5 +66,6 @@ class StaticProgress:
         total_time = time.time() - self.start_time
         metric_str = " ".join([f"{k}={v:.4f}" if isinstance(v, (int, float)) else f"{k}={v}"
                                for k, v in metrics.items()])
-        print(f"[{self.desc}] Done | total_time={total_time:.2f}s | {metric_str}", flush=True)
+        total_time = total_time / 60
+        print(f"[{self.desc}] Done | total_time={total_time:.2f} min | {metric_str}", flush=True)
 
